@@ -1,18 +1,16 @@
+const { Router} = require('express')
 
-const express = require('express')
-const router = express.Router()
+const userRouter = Router();
 
-const userRouter = router();
-
-userRouter.post('/user/signup', (req, res) => {
+userRouter.post('/signup', (req, res) => {
 
 })
 
-userRouter.post('/user/singin', (req, res) => {
+userRouter.post('/singin', (req, res) => {
 
 })
 
-userRouter.get('/user/purchases', (req, res) => {
+userRouter.get('/purchases', (req, res) => {
 
 })
 

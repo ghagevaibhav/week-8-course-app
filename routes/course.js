@@ -1,14 +1,13 @@
-const express = require('express')
-const router = express.Router()
+const { Router} = require('express')
 
-const courseRouter = router
+const courseRouter = Router()
 
-courseRouter.post("/course/purchase", (req, res) => {
+courseRouter.post("/purchase", (req, res) => {
 
 
 })
     
-courseRouter.get('/course/preview', (req, res) => {
+courseRouter.get('/preview', (req, res) => {
     
 })
 
