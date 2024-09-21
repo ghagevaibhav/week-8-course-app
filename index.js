@@ -9,5 +9,8 @@ const app = express()
 app.use('/user', userRouter)
 app.use('/admin', adminRouter)
 app.use('/course', courseRouter)
-
-app.listen(PORT)
+async function main(){
+    await mongoose.connect("mongodb+srv://admin:oMeyMiDShQNaLpUT@cluster0.cdutnom.mongodb.net/coursera_app")
+    app.listen(PORT)
+}
+main()
